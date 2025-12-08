@@ -1,0 +1,18 @@
+import Langue from "./Option/Langue";
+import Theme from "./Option/Theme";
+import Nav from "./Nav";
+
+export default function Header() {
+  return (
+    <div className="fixed top-0 right-0 left-0 flex flex-row bg-black/50 backdrop-blur-md z-50 border-b border-white/10 items-center p-3">
+      <div className="flex flex-row gap-5 ml-10 flex-1">
+        <Nav />
+      </div>
+      <img src="./favicon.ico" alt="logo" width="40px" />
+      <div className="flex flex-row gap-5 mr-10 flex-1 justify-end">
+        <Theme />
+        <Langue />
+      </div>
+    </div>
+  );
+}
