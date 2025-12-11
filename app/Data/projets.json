@@ -30,8 +30,8 @@
                 "Synfony",
                 "Bootstrap"
             ],
-            "image": "/image/clicker.jpg",
-            "link": "https://lien-du-projet-3.com"
+            "image": "/image/apside.png",
+            "descriptionDialog": "Durant le deuxième année MMI tout le étudient on eu à realiser un stage. J'ai effectuer mon stage chez APSIDE. Durant ce stage j'ai réaliser des évolution sur des application internes. Il y avait deux applications une utiliser comme technologie Angular et l'autre Synfony. Ces deux applications sevais à renseigner les saisie d'activiter et les projet en cours pour chaque employé."
         }
     ]
 }

@@ -33,7 +33,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>
+                <Button className="cursor-pointer">
                   <Link />
                 </Button>
               </a>
@@ -53,7 +53,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>
+                <Button className="cursor-pointer">
                   <Link />
                 </Button>
               </a>
@@ -70,7 +70,7 @@ export default function Contact() {
             <CardDescription>vicraveau@gmail.com</CardDescription>
             <CardAction>
               <a href="mailto:vicraveau@gmail.com">
-                <Button>
+                <Button className="cursor-pointer">
                   <Link />
                 </Button>
               </a>
@@ -86,7 +86,7 @@ export default function Contact() {
             <CardDescription>Télécharger</CardDescription>
             <CardAction>
               <a href="mailto:vicraveau@gmail.com">
-                <Button>
+                <Button className="cursor-pointer">
                   <Download />
                 </Button>
               </a>
@@ -96,22 +96,6 @@ export default function Contact() {
             <FileText />
           </CardContent>
         </Card>
-
-        {/* <div className="bg-black dark:bg-white p-3 rounded-2xl">
-          <a href="https://github.com/vairan37">
-            <Github className="text-white dark:text-black" size={30} />
-          </a>
-        </div>
-        <div className="bg-black dark:bg-white p-3 rounded-2xl">
-          <a href="https://www.linkedin.com/in/victor-raveau/">
-            <Linkedin className="text-white dark:text-black" size={30} />
-          </a>
-        </div>
-        <div className="bg-black dark:bg-white p-3 rounded-2xl">
-          <a href="mailto:vicraveau@gmail.com">
-            <Mail className="text-white dark:text-black" size={30} />
-          </a>
-        </div> */}
       </div>
     </div>
   );

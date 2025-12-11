@@ -18,19 +18,16 @@ export default function Projets({
   lien,
 }) {
   return (
-    <Card className="flex flex-row h-[200px] overflow-hidden p-0 gap-0 grayscale hover:grayscale-0 transition duration-500 hover:scale-102">
+    <Card className="flex flex-row h-[200px] overflow-hidden p-0 gap-0 grayscale hover:grayscale-0 transition duration-500 hover:scale-102 cursor-pointer">
       <div className="flex flex-col w-full py-6">
         <CardHeader>
-          <CardTitle>{title}</CardTitle>
-          <CardDescription>{description}</CardDescription>
-          <CardAction>{lien}</CardAction>
+          <CardTitle className="text-left">{title}</CardTitle>
+          <CardDescription className="text-left">{description}</CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto">
           <div className="flex gap-3 flex-wrap">
             {technologies.map((technology) => (
-              <Badge key={technology} >
-                {technology}
-              </Badge>
+              <Badge key={technology}>{technology}</Badge>
             ))}
           </div>
         </CardFooter>
