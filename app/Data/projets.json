@@ -1,0 +1,37 @@
+{
+    "projets": [
+        {
+            "id": 1,
+            "title": "Convertiseur d'image en ASCII",
+            "description": "Petit projet qui m'as permis d'apprendre le Java dans le cadre de mon alternance",
+            "technologies": [
+                "Java"
+            ],
+            "image": "/image/ascii.jpg",
+            "link": "https://lien-du-projet-3.com"
+        },
+        {
+            "id": 2,
+            "title": "Clicker Game",
+            "description": "Durant un projet en cours j'ai realiser un clicker game à l'effigie d'une marque fictive",
+            "technologies": [
+                "Vue.js",
+                "Tailwind CSS"
+            ],
+            "image": "/image/clicker.jpg",
+            "link": "https://lien-du-projet-3.com"
+        },
+        {
+            "id": 3,
+            "title": "Stage deuxième année MMI",
+            "description": "Mission que j'ai réaliser durant mon stage de deuxième année MMI",
+            "technologies": [
+                "Angular",
+                "Synfony",
+                "Bootstrap"
+            ],
+            "image": "/image/clicker.jpg",
+            "link": "https://lien-du-projet-3.com"
+        }
+    ]
+}

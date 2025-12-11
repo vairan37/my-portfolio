@@ -12,7 +12,10 @@ export default function Acceuil() {
         avec React et Vue.js, du maquettage Figma au déploiement Agile.
       </p>
       <FlowerIcon className="animate-spin-slow absolute bottom-5 right-[-8rem]  text-black dark:text-white" />
-      //TODO: ajoute un indicateur de scroll
+
     </div>
   );
 }
+      //TODO: ajoute un indicateur de scroll
+      //TODO: ajoute un effet de scroll smooth
+      //TODO: faire la version mobile

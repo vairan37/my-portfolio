@@ -11,7 +11,7 @@ export default function Langue() {
   return (
     <div className="flex flex-row gap-1">
       <DropdownMenu>
-        <DropdownMenuTrigger>
+        <DropdownMenuTrigger asChild>
           <Button variant="outline">
             <p>Fr</p>
             <Globe className="dark:text-white" size={24} />

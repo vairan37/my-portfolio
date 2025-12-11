@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import Nav from "./Nav";
+import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   const date = new Date();
@@ -10,21 +11,29 @@ export default function Footer() {
       <div className="flex flex-row justify-between">
         <Nav />
         <div className="flex flex-row gap-5">
-          <div className="bg-black dark:bg-white p-3 rounded-2xl">
-            <a href="https://github.com/vairan37">
+          <a
+            href="https://github.com/vairan37"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button>
               <Github className="text-white dark:text-black" size={16} />
-            </a>
-          </div>
-          <div className="bg-black dark:bg-white p-3 rounded-2xl">
-            <a href="https://www.linkedin.com/in/victor-raveau/">
+            </Button>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/victor-raveau/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button>
               <Linkedin className="text-white dark:text-black" size={16} />
-            </a>
-          </div>
-          <div className="bg-black dark:bg-white p-3 rounded-2xl">
-            <a href="mailto:vicraveau@gmail.com">
+            </Button>
+          </a>
+          <a href="mailto:vicraveau@gmail.com">
+            <Button>
               <Mail className="text-white dark:text-black" size={16} />
-            </a>
-          </div>
+            </Button>
+          </a>
         </div>
       </div>
       <p className="text-xs flex justify-center">

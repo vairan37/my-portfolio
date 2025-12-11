@@ -124,6 +124,15 @@ html {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.dark::selection {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

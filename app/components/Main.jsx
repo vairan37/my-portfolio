@@ -2,7 +2,6 @@ import Acceuil from "./Acceuil";
 import AboutMe from "./AboutMe";
 import Projets from "./Projets";
 import Contact from "./Contact";
-import Image from "next/image";
 
 export default function Main() {
   return (
