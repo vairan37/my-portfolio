@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div id="about" className=" border-2 h-[80vh]">
+    <div id="about" className=" border-2 h-[80vh] pl-50 pr-50">
       <h2 className="text-5xl font-bold">About Me</h2>
       <p className="text-xl">
         Je suis un developpeur web, actuellement en alternance chez CGI dans le

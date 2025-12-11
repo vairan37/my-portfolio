@@ -1,12 +1,103 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ArrowUpRight,
+  FileText,
+  Link,
+  Download,
+} from "lucide-react";
 
 export default function Contact() {
   return (
-    <div id="contact" className="h-[20vh]">
+    <div id="contact" className="h-full pl-50 pr-50">
       <h2 className="text-5xl font-bold">Contact</h2>
+      <div className="grid grid-cols-2 gap-5 m-10 w-[60%] mx-auto">
+        <Card>
+          <CardHeader>
+            <CardTitle>Github</CardTitle>
+            <CardDescription>vairan37</CardDescription>
+            <CardAction>
+              <a
+                href="https://github.com/vairan37"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>
+                  <Link />
+                </Button>
+              </a>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <Github />
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>Linkedin</CardTitle>
+            <CardDescription>Victor Raveau</CardDescription>
+            <CardAction>
+              <a
+                href="https://www.linkedin.com/in/victor-raveau/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>
+                  <Link />
+                </Button>
+              </a>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <Linkedin />
+          </CardContent>
+        </Card>
 
-      <div className="flex flex-row gap-5 justify-around items-center h-3/4">
-        <div className="bg-black dark:bg-white p-3 rounded-2xl">
+        <Card>
+          <CardHeader>
+            <CardTitle>Mail</CardTitle>
+            <CardDescription>vicraveau@gmail.com</CardDescription>
+            <CardAction>
+              <a href="mailto:vicraveau@gmail.com">
+                <Button>
+                  <Link />
+                </Button>
+              </a>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <Mail />
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>CV</CardTitle>
+            <CardDescription>Télécharger</CardDescription>
+            <CardAction>
+              <a href="mailto:vicraveau@gmail.com">
+                <Button>
+                  <Download />
+                </Button>
+              </a>
+            </CardAction>
+          </CardHeader>
+          <CardContent>
+            <FileText />
+          </CardContent>
+        </Card>
+
+        {/* <div className="bg-black dark:bg-white p-3 rounded-2xl">
           <a href="https://github.com/vairan37">
             <Github className="text-white dark:text-black" size={30} />
           </a>
@@ -20,7 +111,7 @@ export default function Contact() {
           <a href="mailto:vicraveau@gmail.com">
             <Mail className="text-white dark:text-black" size={30} />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

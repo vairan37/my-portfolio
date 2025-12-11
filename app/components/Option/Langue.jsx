@@ -18,3 +18,5 @@ export default function Langue() {
     </div>
   );
 }
+//TODO: finir d'ecrire les texte
+//TODO: finir la traduction
