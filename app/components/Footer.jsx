@@ -16,7 +16,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button>
+            <Button className="cursor-pointer">
               <Github className="text-white dark:text-black" size={16} />
             </Button>
           </a>
@@ -25,12 +25,12 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button>
+            <Button className="cursor-pointer">
               <Linkedin className="text-white dark:text-black" size={16} />
             </Button>
           </a>
           <a href="mailto:vicraveau@gmail.com">
-            <Button>
+            <Button className="cursor-pointer">
               <Mail className="text-white dark:text-black" size={16} />
             </Button>
           </a>

@@ -8,7 +8,7 @@ export default function Header() {
       <div className="flex flex-row gap-5 ml-10 flex-1">
         <Nav />
       </div>
-      <img src="./favicon.ico" alt="logo" width="40px" />
+      <img src="./favicon.ico" alt="logo" width="34px" />
       <div className="flex flex-row gap-5 mr-10 flex-1 justify-end">
         <Theme />
         <Langue />
