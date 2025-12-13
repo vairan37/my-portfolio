@@ -8,6 +8,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export default function Projets() {
   return (
@@ -26,10 +28,36 @@ export default function Projets() {
             </DialogTrigger>
             <DialogContent className="h-[80vh] w-full sm:max-w-[80vw]">
               <DialogHeader>
-                <DialogTitle>{projet.title}</DialogTitle>
-                <DialogDescription>
+                <DialogTitle className="text-3xl font-bold">
+                  {projet.title}
+                </DialogTitle>
+                <DialogDescription className="text-lg">
                   {projet.descriptionDialog}
                 </DialogDescription>
+                <div className="flex gap-3 flex-wrap mt-5">
+                  {projet.technologies.map((technology) => (
+                    <Badge key={technology}>{technology}</Badge>
+                  ))}
+                </div>
+                <div className="flex gap-3 flex-wrap mt-5">
+                  {projet.imgMock.map((img) => (
+                    <Image
+                      key={img}
+                      src={img}
+                      alt={projet.title}
+                      width={400}
+                      height={400}
+                    />
+                  ))}
+                </div>
+                {projet.imgViz && (
+                  <Image
+                    src={projet.imgViz}
+                    alt={projet.title}
+                    width={500}
+                    height={500}
+                  />
+                )}
               </DialogHeader>
             </DialogContent>
           </Dialog>
@@ -38,3 +66,4 @@ export default function Projets() {
     </div>
   );
 }
+//TODO: Local storage pour le projet Clicker sauvegarde des points

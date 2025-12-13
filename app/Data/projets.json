@@ -8,7 +8,10 @@
                 "Java"
             ],
             "image": "/image/ascii.jpg",
-            "link": "https://lien-du-projet-3.com"
+            "imgMock": [
+                "/image/soulMock.png"
+            ],
+            "descriptionDialog": "Dans le cadre de mon alternance, j'ai été amené à apprendre Java Spring Boot. J'ai d'abord acquis les fondamentaux du langage Java et du framework grâce à la formation de mes tuteurs en entreprise. Pour consolider ces connaissances de manière autonome, j'ai ensuite développé un projet personnel, un outil permettant de convertir des images en ASCII art. Ce projet a servi de validation pratique de mes compétences en Back-End."
         },
         {
             "id": 2,
@@ -20,6 +23,9 @@
                 "Bootstrap"
             ],
             "image": "/image/apside.png",
+            "imgMock": [
+                "/image/soulMock.png"
+            ],
             "descriptionDialog": "Durant le deuxième année MMI tout le étudient on eu à realiser un stage. J'ai effectuer mon stage chez APSIDE. Durant ce stage j'ai réaliser des évolution sur des application internes. Il y avait deux applications une utiliser comme technologie Angular et l'autre Synfony. Ces deux applications sevais à renseigner les saisie d'activiter et les projet en cours pour chaque employé."
         },
         {
@@ -28,10 +34,27 @@
             "description": "Durant un projet en cours j'ai realiser un clicker game à l'effigie d'une marque fictive",
             "technologies": [
                 "Vue.js",
+                "CSS"
+            ],
+            "image": "/image/soul.png",
+            "imgMock": [
+                "/image/soulMock.png"
+            ],
+            "descriptionDialog": "rien"
+        },
+        {
+            "id": 4,
+            "title": "Portfolio",
+            "description": "Develeppement de mon propre Portfolio",
+            "technologies": [
+                "Next.js",
                 "Tailwind CSS"
             ],
-            "image": "/image/clicker.jpg",
-            "link": "https://lien-du-projet-3.com"
+            "image": "/image/fleur.png",
+            "imgMock": [
+                "/image/soulMock.png"
+            ],
+            "descriptionDialog": "Ce portfolio me permet de mettre en avant mes compétences et mes projets. Il est developpé en Next.js et Tailwind CSS."
         }
     ]
 }
