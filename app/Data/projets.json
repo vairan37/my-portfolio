@@ -7,7 +7,7 @@
             "technologies": [
                 "Java"
             ],
-            "image": "/image/ascii.jpg",
+            "image": "/image/ascii.png",
             "imgMock": [
                 "/image/soulMock.png"
             ],
@@ -31,7 +31,7 @@
         {
             "id": 3,
             "title": "Clicker Game",
-            "description": "Durant un projet en cours j'ai realiser un clicker game à l'effigie d'une marque fictive",
+            "description": "Mini-jeu clicker développé avec Vue.js pour une marque fictive.",
             "technologies": [
                 "Vue.js",
                 "CSS"
@@ -40,12 +40,12 @@
             "imgMock": [
                 "/image/soulMock.png"
             ],
-            "descriptionDialog": "rien"
+            "descriptionDialog": "Dans le cadre d’un projet réalisé en cours, j’ai développé un mini-jeu de type clicker pour une marque de vêtements fictive. Le principe du jeu est simple, accumuler un maximum de points en cliquant. Ce projet m’a permis de découvrir et de prendre en main le framework Vue.js, tout en appliquant des notions de développement front-end et d’interactivité."
         },
         {
             "id": 4,
             "title": "Portfolio",
-            "description": "Develeppement de mon propre Portfolio",
+            "description": "Portfolio personnel développé en Next.js et Tailwind CSS.",
             "technologies": [
                 "Next.js",
                 "Tailwind CSS"
@@ -54,7 +54,7 @@
             "imgMock": [
                 "/image/soulMock.png"
             ],
-            "descriptionDialog": "Ce portfolio me permet de mettre en avant mes compétences et mes projets. Il est developpé en Next.js et Tailwind CSS."
+            "descriptionDialog": "Ce portfolio a été conçu pour mettre en avant mes compétences ainsi que les différents projets que j’ai réalisés. Il est développé avec Next.js et Tailwind CSS, afin d’offrir une interface moderne, performante et responsive."
         }
     ]
 }

@@ -8,11 +8,11 @@ export default function Acceuil() {
     >
       <h1 className="text-7xl font-bold">Victor Raveau</h1>
       <p className="text-3xl mt-20">
-        Je suis Victor <FlowerIcon className="inline w-6 h-6" /> Développeur
+        Je suis Victor <FlowerIcon className="inline w-6 h-6 mb-2" /> Développeur
         Front-End en BUT MMI et chez CGI. Je conçois des interfaces modernes
         avec React et Vue.js, du maquettage Figma (UI/UX) au code fonctionnel.
       </p>
-      <FlowerIcon className="animate-spin-slow absolute bottom-5 right-[-8rem]  text-black dark:text-white" />
+      <FlowerIcon className="animate-spin-slow absolute bottom-5 -right-32  text-black dark:text-white" />
     </div>
   );
 }

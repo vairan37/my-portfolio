@@ -3,8 +3,9 @@ export default function AboutMe() {
     <div id="about" className="h-[80vh] pl-50 pr-50">
       <h2 className="text-7xl font-bold">About Me</h2>
       <p className="text-3xl mt-15">
-        Bonjour ! Je suis <strong>Victor Raveau</strong>, étudiant en BUT Métiers du Multimédia
-        et de l'Internet (MMI) et Développeur Web en alternance chez <strong>CGI</strong>.
+        Bonjour ! Je suis <strong>Victor Raveau</strong>, étudiant en BUT
+        Métiers du Multimédia et de l'Internet (MMI) et Développeur Web en
+        alternance chez <strong>CGI</strong>.
         <br />
         <br />
         Je me concentre principalement sur le développement Front-End moderne et
