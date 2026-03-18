@@ -4,7 +4,7 @@ export default function Acceuil() {
   return (
     <div
       id="acceuil"
-      className="mt-32 md:mt-75 min-h-[60vh] md:h-[60vh] relative overflow-hidden px-6 md:px-50"
+      className="mt-20 md:mt-75 min-h-[60vh] md:h-[60vh] relative overflow-hidden px-6 md:px-50"
     >
       <h1 className="text-4xl md:text-7xl font-bold">Victor Raveau</h1>
       <p className="text-xl md:text-3xl mt-10 md:mt-20">
