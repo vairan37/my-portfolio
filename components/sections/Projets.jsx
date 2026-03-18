@@ -1,5 +1,5 @@
 import Projet from "./Projet";
-import { projets } from "../Data/projets.json";
+import { projets } from "@/data/projets.json";
 import {
   Dialog,
   DialogContent,

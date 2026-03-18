@@ -1,5 +1,5 @@
-import Langue from "./Option/Langue";
-import Theme from "./Option/Theme";
+import Langue from "@/components/ui/Option/Langue";
+import Theme from "@/components/ui/Option/Theme";
 import Nav from "./Nav";
 
 export default function Header() {

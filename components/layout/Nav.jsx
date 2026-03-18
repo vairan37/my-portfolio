@@ -1,4 +1,4 @@
-import { FlowerIcon } from "./icons/FlowerIcon";
+import { FlowerIcon } from "@/components/ui/icons/FlowerIcon";
 
 export default function Nav() {
   return (

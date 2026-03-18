@@ -1,8 +1,8 @@
-import Acceuil from "./Acceuil";
-import AboutMe from "./AboutMe";
-import Projets from "./Projets";
-import Contact from "./Contact";
-import ScrollToTop from "@/app/components/ScrollToTop";
+import Acceuil from "@/components/sections/Acceuil";
+import AboutMe from "@/components/sections/AboutMe";
+import Projets from "@/components/sections/Projets";
+import Contact from "@/components/sections/Contact";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 export default function Main() {
     return (
