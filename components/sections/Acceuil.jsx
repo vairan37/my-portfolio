@@ -4,10 +4,10 @@ export default function Acceuil() {
   return (
     <div
       id="acceuil"
-      className="mt-75 h-[60vh] relative overflow-hidden pl-50 pr-50"
+      className="mt-32 md:mt-75 min-h-[60vh] md:h-[60vh] relative overflow-hidden px-6 md:px-50"
     >
-      <h1 className="text-7xl font-bold">Victor Raveau</h1>
-      <p className="text-3xl mt-20">
+      <h1 className="text-4xl md:text-7xl font-bold">Victor Raveau</h1>
+      <p className="text-xl md:text-3xl mt-10 md:mt-20">
         Je suis Victor <FlowerIcon className="inline w-6 h-6 mb-2" /> Développeur
         Front-End en BUT MMI et chez CGI. Je conçois des interfaces modernes
         avec React et Vue.js, du maquettage Figma (UI/UX) au code fonctionnel.

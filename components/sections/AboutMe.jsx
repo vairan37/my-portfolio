@@ -1,8 +1,8 @@
 export default function AboutMe() {
   return (
-    <div id="about" className="h-[80vh] pl-50 pr-50">
-      <h2 className="text-7xl font-bold">About Me</h2>
-      <p className="text-3xl mt-15">
+    <div id="about" className="min-h-[80vh] md:h-[80vh] px-6 md:px-50 py-20 md:py-0 flex flex-col justify-center">
+      <h2 className="text-4xl md:text-7xl font-bold">About Me</h2>
+      <p className="text-xl md:text-3xl mt-10 md:mt-15">
         Bonjour ! Je suis <strong>Victor Raveau</strong>, étudiant en BUT
         Métiers du Multimédia et de l'Internet (MMI) et Développeur Web en
         alternance chez <strong>CGI</strong>.

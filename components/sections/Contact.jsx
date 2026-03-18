@@ -20,9 +20,9 @@ import {
 
 export default function Contact() {
   return (
-    <div id="contact" className="h-full pl-50 pr-50">
-      <h2 className="text-5xl font-bold">Contact</h2>
-      <div className="grid grid-cols-2 gap-5 m-10 w-[60%] mx-auto">
+    <div id="contact" className="h-full px-6 md:px-50">
+      <h2 className="text-4xl md:text-5xl font-bold">Contact</h2>
+      <div className="grid grid-cols-2 gap-5 my-10 w-full md:w-[60%] mx-auto">
         <Card>
           <CardHeader>
             <CardTitle>Github</CardTitle>

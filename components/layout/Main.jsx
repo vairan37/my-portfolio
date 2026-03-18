@@ -6,7 +6,7 @@ import ScrollToTop from "@/components/ui/ScrollToTop";
 
 export default function Main() {
     return (
-        <div className="flex flex-col gap-25 w-full mx-auto relative overflow-hidden">
+        <div className="flex flex-col gap-12 md:gap-25 w-full mx-auto relative overflow-hidden">
             <Acceuil/>
             <AboutMe/>
             <Projets/>
