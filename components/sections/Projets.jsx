@@ -26,42 +26,44 @@ export default function Projets() {
                 image={projet.image}
               />
             </DialogTrigger>
-            <DialogContent className="max-h-[90vh] w-[95vw] overflow-y-auto p-4 md:p-10">
-              <DialogHeader>
-                <DialogTitle className="text-xl md:text-3xl font-bold text-left">
-                  {projet.title}
-                </DialogTitle>
-                <DialogDescription className="text-sm md:text-lg text-left mt-2">
-                  {projet.descriptionDialog}
-                </DialogDescription>
-                <div className="flex gap-2 md:gap-3 flex-wrap mt-4">
-                  {projet.technologies.map((technology) => (
-                    <Badge key={technology} className="text-[10px] md:text-sm">{technology}</Badge>
-                  ))}
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                  {projet.imgMock.map((img) => (
-                    <div key={img} className="relative aspect-video w-full overflow-hidden rounded-lg border border-black/10 dark:border-white/10">
-                      <Image
-                        src={img}
-                        alt={projet.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  ))}
-                  {projet.imgViz && (
-                    <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-black/10 dark:border-white/10">
-                      <Image
-                        src={projet.imgViz}
-                        alt={projet.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
-                </div>
-              </DialogHeader>
+            <DialogContent className="max-h-[90vh] w-[95vw] p-0 overflow-hidden">
+              <div className="overflow-y-auto h-full max-h-[90vh] p-6 md:p-10">
+                <DialogHeader>
+                  <DialogTitle className="text-xl md:text-3xl font-bold text-left">
+                    {projet.title}
+                  </DialogTitle>
+                  <DialogDescription className="text-sm md:text-lg text-left mt-2">
+                    {projet.descriptionDialog}
+                  </DialogDescription>
+                  <div className="flex gap-2 md:gap-3 flex-wrap mt-4">
+                    {projet.technologies.map((technology) => (
+                      <Badge key={technology} className="text-[10px] md:text-sm">{technology}</Badge>
+                    ))}
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                    {projet.imgMock.map((img) => (
+                      <div key={img} className="relative aspect-video w-full overflow-hidden rounded-lg border border-black/10 dark:border-white/10">
+                        <Image
+                          src={img}
+                          alt={projet.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    ))}
+                    {projet.imgViz && (
+                      <div className="relative aspect-video w-full overflow-hidden rounded-lg border border-black/10 dark:border-white/10">
+                        <Image
+                          src={projet.imgViz}
+                          alt={projet.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
+                  </div>
+                </DialogHeader>
+              </div>
             </DialogContent>
           </Dialog>
         ))}
