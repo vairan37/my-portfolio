@@ -18,22 +18,32 @@ export default function Projets({
   lien,
 }) {
   return (
-    <Card className="flex flex-row h-[200px] overflow-hidden p-0 gap-0 grayscale hover:grayscale-0 transition duration-500 hover:scale-102 cursor-pointer">
-      <div className="flex flex-col w-full py-6">
-        <CardHeader>
-          <CardTitle className="text-left">{title}</CardTitle>
-          <CardDescription className="text-left">{description}</CardDescription>
-        </CardHeader>
-        <CardFooter className="mt-auto">
-          <div className="flex gap-3 flex-wrap">
+    <Card className="flex flex-row min-h-[150px] md:h-[200px] overflow-hidden p-0 gap-0 md:grayscale md:hover:grayscale-0 transition duration-500 hover:scale-102 cursor-pointer">
+      <div className="flex flex-col flex-1 py-2 md:py-6 overflow-hidden">
+        <div className="px-3 md:px-6">
+          <h3 className="text-left font-bold text-sm md:text-xl line-clamp-1">{title}</h3>
+          <p className="text-left text-xs md:text-sm text-muted-foreground line-clamp-2 md:line-clamp-3">
+            {description}
+          </p>
+        </div>
+        <div className="mt-auto px-3 pb-2 md:px-6 md:pb-6">
+          <div className="flex gap-1 md:gap-3 flex-wrap">
             {technologies.map((technology) => (
-              <Badge key={technology}>{technology}</Badge>
+              <Badge key={technology} className="text-[9px] md:text-sm px-1 md:px-2 py-0">
+                {technology}
+              </Badge>
             ))}
           </div>
-        </CardFooter>
+        </div>
       </div>
-      <div className="relative w-[200px] h-full shrink-0">
-        <Image src={image} fill className="object-cover" alt={title} />
+      <div className="relative w-[100px] md:w-[200px] min-h-[150px] md:h-full shrink-0">
+        <Image 
+          src={image} 
+          fill 
+          sizes="(max-width: 768px) 100px, 200px"
+          className="object-cover" 
+          alt={title} 
+        />
       </div>
     </Card>
   );

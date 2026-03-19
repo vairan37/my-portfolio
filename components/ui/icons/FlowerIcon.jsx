@@ -1,8 +1,6 @@
 export function FlowerIcon({ className, ...props }) {
   return (
     <svg
-      width="337"
-      height="327"
       viewBox="0 0 337 327"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
