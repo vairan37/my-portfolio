@@ -1,3 +1,5 @@
+"use client";
+
 import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,7 +15,7 @@ export default function Langue() {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline">
-            <p>Fr</p>
+            <span>Fr</span>
             <Globe className="dark:text-white" size={24} />
           </Button>
         </DropdownMenuTrigger>

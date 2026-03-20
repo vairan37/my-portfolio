@@ -1,11 +1,5 @@
 import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+  Card
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
@@ -15,7 +9,6 @@ export default function Projets({
   description,
   technologies,
   image,
-  lien,
 }) {
   return (
     <Card className="flex flex-row min-h-[150px] md:h-[200px] overflow-hidden p-0 gap-0 md:grayscale md:hover:grayscale-0 transition duration-500 hover:scale-102 cursor-pointer">

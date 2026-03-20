@@ -34,7 +34,7 @@ export default function Nav() {
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="p-2 text-black dark:text-white relative z-[110]"
+          className="p-2 text-black dark:text-white relative z-110"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -46,11 +46,11 @@ export default function Nav() {
         <>
           {/* Background overlay to close menu */}
           <div 
-            className="md:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-[100]" 
+            className="md:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-100" 
             onClick={() => setIsOpen(false)}
           />
           
-          <div className="md:hidden fixed top-16 left-4 right-4 bg-white/95 dark:bg-black/95 backdrop-blur-xl border border-black/10 dark:border-white/10 p-6 rounded-2xl shadow-2xl flex flex-col gap-6 z-[105] animate-in fade-in zoom-in duration-200">
+          <div className="md:hidden fixed top-16 left-4 right-4 bg-white/95 dark:bg-black/95 backdrop-blur-xl border border-black/10 dark:border-white/10 p-6 rounded-2xl shadow-2xl flex flex-col gap-6 z-105 animate-in fade-in zoom-in duration-200">
             {navLinks.map((link) => (
               <a
                 key={link.href}
