@@ -12,7 +12,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  ArrowUpRight,
   FileText,
   Link,
   Download,

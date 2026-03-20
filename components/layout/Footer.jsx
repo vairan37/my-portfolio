@@ -36,7 +36,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <p className="text-xs flex justify-center">
+      <p className="text-xs flex justify-center mt-4">
         © {year} Victor Raveau. All rights reserved.
       </p>
     </div>

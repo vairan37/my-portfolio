@@ -1,6 +1,7 @@
-import Langue from "@/components/ui/Option/Langue";
+// import Langue from "@/components/ui/Option/Langue";
 import Theme from "@/components/ui/Option/Theme";
 import Nav from "./Nav";
+import { FlowerIcon } from "../ui/icons/FlowerIcon";
 
 export default function Header() {
   return (
@@ -8,10 +9,10 @@ export default function Header() {
       <div className="flex flex-row gap-5 ml-4 md:ml-10 flex-1">
         <Nav />
       </div>
-      <img src="./favicon.ico" alt="logo" width="34px" />
+      <FlowerIcon className="w-[30px] h-[30px] text-black dark:text-white" />
       <div className="flex flex-row gap-5 mr-4 md:mr-10 flex-1 justify-end">
         <Theme />
-        <Langue />
+        {/* <Langue />*/}
       </div>
     </div>
   );

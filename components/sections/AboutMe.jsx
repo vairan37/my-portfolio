@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <div id="about" className="min-h-[80vh] md:h-[80vh] px-6 md:px-50 py-10 md:py-0 flex flex-col justify-center">
-      <h2 className="text-4xl md:text-7xl font-bold">About Me</h2>
+      <h2 className="text-4xl md:text-5xl font-bold">À propos</h2>
       <p className="text-xl md:text-2xl mt-10 md:mt-15">
         Je me concentre principalement sur le développement Front-End moderne et
         réactif. Je maîtrise les frameworks de référence tels que React

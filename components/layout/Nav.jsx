@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { FlowerIcon } from "@/components/ui/icons/FlowerIcon";
 import { Menu, X } from "lucide-react";
 
 export default function Nav() {
@@ -24,7 +23,7 @@ export default function Nav() {
               {link.label}
             </a>
             {index < navLinks.length - 1 && (
-              <FlowerIcon className="w-[15px] h-[15px] animate-spin-slow text-black dark:text-white" />
+              <p className="text-0.1xl">•</p>
             )}
           </div>
         ))}
