@@ -26,7 +26,7 @@ export default function Projets() {
                 image={projet.image}
               />
             </DialogTrigger>
-            <DialogContent className="max-h-[90vh] w-[95vw] p-0 overflow-hidden">
+            <DialogContent className="max-h-[90vh] w-[95vw] md:max-w-7xl md:w-full p-0 overflow-hidden">
               <div className="overflow-y-auto h-full max-h-[90vh] p-6 md:p-10">
                 <DialogHeader>
                   <DialogTitle className="text-xl md:text-3xl font-bold text-left">

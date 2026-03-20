@@ -9,7 +9,7 @@ export default function Header() {
       <div className="flex flex-row gap-5 ml-4 md:ml-10 flex-1">
         <Nav />
       </div>
-      <FlowerIcon className="w-[30px] h-[30px] text-black dark:text-white" />
+      <FlowerIcon className="w-[25px] h-[25px] text-black dark:text-white" />
       <div className="flex flex-row gap-5 mr-4 md:mr-10 flex-1 justify-end">
         <Theme />
         {/* <Langue />*/}
