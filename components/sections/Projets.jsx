@@ -13,12 +13,12 @@ import Image from "next/image";
 
 export default function Projets() {
   return (
-    <div id="projets" className="min-h-[70vh] px-6 md:px-50 py-10 md:py-0">
-      <h2 className="text-4xl md:text-5xl font-bold">Projets</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 md:mt-15">
+    <div id="projets" className="min-h-[70vh] px-6 md:px-12 lg:px-50 py-10 lg:py-0">
+      <h2 className="text-4xl lg:text-5xl font-bold">Projets</h2>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10 lg:mt-15">
         {projets.map((projet) => (
           <Dialog key={projet.id}>
-            <DialogTrigger>
+            <DialogTrigger className="w-full text-left">
               <Projet
                 title={projet.title}
                 description={projet.description}
@@ -26,21 +26,21 @@ export default function Projets() {
                 image={projet.image}
               />
             </DialogTrigger>
-            <DialogContent className="max-h-[90vh] w-[95vw] md:max-w-7xl md:w-full p-0 overflow-hidden">
-              <div className="overflow-y-auto h-full max-h-[90vh] p-6 md:p-10">
+            <DialogContent className="max-h-[90vh] w-[95vw] lg:max-w-7xl lg:w-full p-0 overflow-hidden">
+              <div className="overflow-y-auto h-full max-h-[90vh] p-6 lg:p-10">
                 <DialogHeader>
-                  <DialogTitle className="text-xl md:text-3xl font-bold text-left">
+                  <DialogTitle className="text-xl lg:text-3xl font-bold text-left">
                     {projet.title}
                   </DialogTitle>
-                  <DialogDescription className="text-sm md:text-lg text-left mt-2">
+                  <DialogDescription className="text-sm lg:text-lg text-left mt-2">
                     {projet.descriptionDialog}
                   </DialogDescription>
-                  <div className="flex gap-2 md:gap-3 flex-wrap mt-4">
+                  <div className="flex gap-2 lg:gap-3 flex-wrap mt-4">
                     {projet.technologies.map((technology) => (
-                      <Badge key={technology} className="text-[10px] md:text-sm">{technology}</Badge>
+                      <Badge key={technology} className="text-[10px] lg:text-sm">{technology}</Badge>
                     ))}
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6">
                     {projet.imgMock.map((img) => (
                       <div key={img} className="relative aspect-video w-full overflow-hidden rounded-lg border border-black/10 dark:border-white/10">
                         <Image
@@ -71,4 +71,3 @@ export default function Projets() {
     </div>
   );
 }
-//TODO: Local storage pour le projet Clicker sauvegarde des points

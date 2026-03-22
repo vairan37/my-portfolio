@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <nav>
       {/* Desktop Navigation */}
-      <div className="hidden md:flex flex-row gap-5 items-center">
+      <div className="hidden lg:flex flex-row gap-5 items-center">
         {navLinks.map((link, index) => (
           <div key={link.href} className="flex flex-row gap-5 items-center">
             <a href={link.href} className="hover:opacity-70 transition-opacity">
@@ -30,7 +30,7 @@ export default function Nav() {
       </div>
 
       {/* Mobile Hamburger Button */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="p-2 text-black dark:text-white relative z-110"
@@ -45,11 +45,11 @@ export default function Nav() {
         <>
           {/* Background overlay to close menu */}
           <div 
-            className="md:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-100" 
+            className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-100" 
             onClick={() => setIsOpen(false)}
           />
           
-          <div className="md:hidden fixed top-16 left-4 right-4 bg-white/95 dark:bg-black/95 backdrop-blur-xl border border-black/10 dark:border-white/10 p-6 rounded-2xl shadow-2xl flex flex-col gap-6 z-105 animate-in fade-in zoom-in duration-200">
+          <div className="lg:hidden fixed top-16 left-4 right-4 bg-white/95 dark:bg-black/95 backdrop-blur-xl border border-black/10 dark:border-white/10 p-6 rounded-2xl shadow-2xl flex flex-col gap-6 z-105 animate-in fade-in zoom-in duration-200">
             {navLinks.map((link) => (
               <a
                 key={link.href}
