@@ -6,8 +6,11 @@ import { Menu, X } from "lucide-react";
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // TODO: Améliorer le menu burger (utiliser un Portal pour l'overlay, bloquer le scroll du body)
+  // TODO: Harmoniser la langue entre la Nav (en) et les titres de sections (fr)
+
   const navLinks = [
-    { href: "#acceuil", label: "Acceuil" },
+    { href: "#accueil", label: "Accueil" },
     { href: "#about", label: "About me" },
     { href: "#projets", label: "Projects" },
     { href: "#contact", label: "Contact" },

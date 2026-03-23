@@ -15,6 +15,8 @@ import {
 export default function Theme() {
   const { setTheme } = useTheme();
 
+  // TODO: Régler les problèmes d'hydratation Next.js (utiliser un useEffect mounted)
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

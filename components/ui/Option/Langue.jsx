@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export default function Langue() {
+  // TODO: Régler les problèmes d'hydratation Next.js (utiliser un useEffect mounted)
+
   return (
     <div className="flex flex-row gap-1">
       <DropdownMenu>

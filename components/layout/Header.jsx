@@ -9,7 +9,7 @@ export default function Header() {
       <div className="flex flex-row gap-5 ml-4 sm:ml-6 lg:ml-10 flex-1">
         <Nav />
       </div>
-      <a href="#acceuil" className="cursor-pointer hover:opacity-80 transition-opacity">
+      <a href="#accueil" className="cursor-pointer hover:opacity-80 transition-opacity">
         <FlowerIcon className="w-[25px] h-[25px] text-black dark:text-white" />
       </a>
       <div className="flex flex-row gap-5 mr-4 sm:mr-6 lg:mr-10 flex-1 justify-end">
