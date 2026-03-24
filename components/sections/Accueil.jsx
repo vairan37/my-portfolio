@@ -8,10 +8,9 @@ export default function Accueil() {
     >
       <div className="relative z-10">
         <h1 className="text-4xl md:text-7xl font-bold">Victor Raveau</h1>
-        <p className="text-xl md:text-2xl mt-10 md:mt-20">
-          Je suis Victor <FlowerIcon className="inline w-6 h-6 mb-2" /> Développeur
-          Front-End en BUT MMI et chez CGI. Je conçois des interfaces modernes
-          avec React et Vue.js, du maquettage Figma (UI/UX) au code fonctionnel.
+        <p className="text-xl md:text-2xl mt-10 md:mt-20">        
+          Je suis Victor <FlowerIcon className="inline w-6 h-6 mb-2" /> développeur web
+          en troisième année de BUT MMI et alternant chez CGI. 
         </p>
       </div>
       <FlowerIcon className="hidden lg:block animate-spin-slow absolute bottom-5 -right-20 w-[250px] h-[250px] text-black dark:text-white z-0 pointer-events-none" />
