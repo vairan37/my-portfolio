@@ -78,22 +78,29 @@ export default function Contact() {
             <Mail />
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle>CV</CardTitle>
-            <CardDescription>Télécharger</CardDescription>
-            <CardAction>
-              <a href="mailto:vicraveau@gmail.com">
+        <a 
+          href="/documents/CV-Raveau-Victor.pdf" 
+          download="CV-Raveau-Victor.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block h-full"
+        >
+          <Card className="cursor-pointer h-full hover:border-black/30 dark:hover:border-white/30 transition-colors">
+            <CardHeader>
+              <CardTitle>CV</CardTitle>
+              <CardDescription>Télécharger</CardDescription>
+              <CardAction>
                 <Button className="cursor-pointer">
                   <Download />
                 </Button>
-              </a>
-            </CardAction>
-          </CardHeader>
-          <CardContent>
-            <FileText />
-          </CardContent>
-        </Card>
+              </CardAction>
+            </CardHeader>
+            <CardContent>
+              <FileText />
+            </CardContent>
+          </Card>
+        </a>
+        {/* TODO : Ajouter une préview pour le CV */}
       </div>
     </div>
   );
