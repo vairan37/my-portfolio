@@ -32,7 +32,7 @@ export default function Projets() {
                   <DialogTitle className="text-xl lg:text-3xl font-bold text-left">
                     {projet.title}
                   </DialogTitle>
-                  <DialogDescription className="text-sm lg:text-lg text-left mt-2">
+                  <DialogDescription className="text-sm lg:text-lg text-left mt-2 whitespace-pre-line">
                     {projet.descriptionDialog}
                   </DialogDescription>
                   <div className="flex gap-2 lg:gap-3 flex-wrap mt-4">

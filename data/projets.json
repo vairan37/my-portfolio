@@ -2,19 +2,43 @@
     "projets": [
         {
             "id": 1,
-            "title": "Convertiseur d'image en ASCII",
-            "description": "Petit projet qui m'as permis d'apprendre le Java dans le cadre de mon alternance",
+            "title": "Portfolio",
+            "description": "Portfolio personnel développé en Next.js et Tailwind CSS.",
             "technologies": [
-                "Java"
+                "Next.js",
+                "Tailwind CSS"
             ],
-            "image": "/image/ascii.png",
-            "imgMock": [
-                "/image/soulMock.png"
-            ],
-            "descriptionDialog": "Dans le cadre de mon alternance, j'ai été amené à apprendre Java Spring Boot. J'ai d'abord acquis les fondamentaux du langage Java et du framework grâce à la formation de mes tuteurs en entreprise. Pour consolider ces connaissances de manière autonome, j'ai ensuite développé un projet personnel, un outil permettant de convertir des images en ASCII art. Ce projet a servi de validation pratique de mes compétences en Back-End."
+            "image": "/image/portfolio.png",
+            "imgMock": [],
+            "descriptionDialog": "Ce portfolio a été conçu pour mettre en avant mes compétences ainsi que les différents projets que j’ai réalisés. Je l'ai développé avec Next.js et Tailwind CSS."
         },
         {
             "id": 2,
+            "title": "Convertiseur d'image en ASCII",
+            "description": "Projet réalisé en alternance pour monter en compétences sur Java et Spring Boot.",
+            "technologies": [
+                "Java Spring Boot"
+            ],
+            "image": "/image/ascii.png",
+            "imgMock": [],
+            "descriptionDialog": "Dans le cadre de mon alternance, j'ai été amené à apprendre Java Spring Boot. J'ai d'abord acquis les fondamentaux du langage Java et du framework grâce à la formation de mes tuteurs en entreprise.\n\nPour consolider ces connaissances de manière autonome, j'ai ensuite développé un projet personnel, un outil permettant de convertir des images en ASCII art. Afin de rendre mon API accessible et fonctionnelle, j'ai également créé un front-end avec l'aide de l'IA, permettant d'interagir simplement avec mon back-end.\n\nCe projet a ainsi servi de validation pratique de mes compétences en développement Back-End."
+        },
+        {
+            "id": 3,
+            "title": "Customisateur de T-shirt",
+            "description": "Configurateur de t-shirt 3D avec personnalisation des couleurs, tailles et logos.",
+            "technologies": [
+                "Three.js",
+                "React Three Fiber",
+                "React",
+                "Blender"
+            ],
+            "image": "/image/three.png",
+            "imgMock": [],
+            "descriptionDialog": "Dans le cadre d'un projet scolaire, mon camarade et moi avons imaginé une entreprise fictive pour laquelle j'ai développé un configurateur de t-shirt en 3D. Réalisé avec Three.js et React Three Fiber, il permet à l'utilisateur de personnaliser son t-shirt de manière interactive en modifiant la couleur, la taille ainsi que les logos placés à l'avant et à l'arrière.\n\nJ'ai également modélisé l'intégralité du magasin sur Blender, dans un style pop-up store, afin d'offrir un environnement immersif et cohérent avec l'identité de la marque imaginée. L'accent a été mis sur l'expérience utilisateur, avec une interface intuitive."
+        },
+        {
+            "id": 4,
             "title": "Stage deuxième année MMI",
             "description": "Mission que j'ai réaliser durant mon stage de deuxième année MMI",
             "technologies": [
@@ -23,15 +47,13 @@
                 "Bootstrap"
             ],
             "image": "/image/apside.png",
-            "imgMock": [
-                "/image/soulMock.png"
-            ],
-            "descriptionDialog": "Durant le deuxième année MMI tout le étudient on eu à realiser un stage. J'ai effectuer mon stage chez APSIDE. Durant ce stage j'ai réaliser des évolution sur des application internes. Il y avait deux applications une utiliser comme technologie Angular et l'autre Synfony. Ces deux applications sevais à renseigner les saisie d'activiter et les projet en cours pour chaque employé."
+            "imgMock": [],
+            "descriptionDialog": "Durant ma deuxième année de MMI, j'ai effectué mon stage chez APSIDE, une ESN. Au cours de cette expérience, j'ai travaillé sur l'évolution de deux applications internes, l'une développée avec Angular et l'autre avec Symfony. Ces applications permettaient aux employés de saisir leurs activités et de suivre les projets en cours. Le back-end Symfony assurait également la génération des factures clients, une fonctionnalité clé pour le bon fonctionnement de l'entreprise.\n\nDurant mon stage, j'ai eu l'occasion de travailler sur plusieurs missions concrètes. J'ai dans un premier temps amélioré le responsive des applications en travaillant sur la partie Bootstrap, afin de les rendre plus agréables et accessibles à l'utilisation. J'ai également développé un système de blocage des saisies d'activité côté Angular, empêchant les collaborateurs de modifier leurs saisies à partir d'une certaine date, évitant ainsi des incohérences avec les factures clients déjà envoyées. Enfin, j'ai mis en place un système combinant Power Apps et Symfony permettant aux collaborateurs de notifier directement leur manager par mail afin de demander un déblocage exceptionnel de leurs saisies en cas d'urgence."
         },
         {
-            "id": 3,
+            "id": 5,
             "title": "Clicker Game",
-            "description": "Mini-jeu clicker développé avec Vue.js pour une marque fictive.",
+            "description": "Mini-jeu clicker développé en Vue.js pour une marque fictive.",
             "technologies": [
                 "Vue.js",
                 "CSS"
@@ -40,21 +62,7 @@
             "imgMock": [
                 "/image/soulMock.png"
             ],
-            "descriptionDialog": "Dans le cadre d’un projet réalisé en cours, j’ai développé un mini-jeu de type clicker pour une marque de vêtements fictive. Le principe du jeu est simple, accumuler un maximum de points en cliquant. Ce projet m’a permis de découvrir et de prendre en main le framework Vue.js, tout en appliquant des notions de développement front-end et d’interactivité."
-        },
-        {
-            "id": 4,
-            "title": "Portfolio",
-            "description": "Portfolio personnel développé en Next.js et Tailwind CSS.",
-            "technologies": [
-                "Next.js",
-                "Tailwind CSS"
-            ],
-            "image": "/image/fleur.png",
-            "imgMock": [
-                "/image/soulMock.png"
-            ],
-            "descriptionDialog": "Ce portfolio a été conçu pour mettre en avant mes compétences ainsi que les différents projets que j’ai réalisés. Il est développé avec Next.js et Tailwind CSS, afin d’offrir une interface moderne, performante et responsive."
+            "descriptionDialog": "Dans le cadre d’un projet réalisé en cours, j’ai développé un mini-jeu de type clicker pour une marque de vêtements fictive. Le principe du jeu est simple, accumuler un maximum de points en cliquant.\n\nCe projet m’a permis de découvrir et de prendre en main le framework Vue.js, tout en appliquant des notions de développement front-end et d’interactivité."
         }
     ]
 }
