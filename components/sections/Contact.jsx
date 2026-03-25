@@ -7,99 +7,69 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  FileText,
-  Link,
-  Download,
-} from "lucide-react";
+import { Github, Linkedin, Mail, FileText, Link, Download } from "lucide-react";
+
+const jsonContact = [
+  {
+    id: 0,
+    name: "Github",
+    icon: <Github />,
+    url: "https://github.com/vairan37",
+    description: "vairan37",
+    iconBtn: <Link />,
+  },
+  {
+    id: 1,
+    name: "LinkedIn",
+    icon: <Linkedin />,
+    url: "https://www.linkedin.com/in/victor-raveau/",
+    description: "Victor Raveau",
+    iconBtn: <Link />,
+  },
+  {
+    id: 2,
+    name: "Mail",
+    icon: <Mail />,
+    url: "mailto:vicraveau@gmail.com",
+    description: "vicraveau@gmail.com",
+    iconBtn: <Link />,
+  },
+  {
+    id: 3,
+    name: "CV",
+    icon: <FileText />,
+    url: "/documents/CV-Raveau-Victor.pdf",
+    description: "Télecharger",
+    iconBtn: <Download />,
+  },
+];
 
 export default function Contact() {
   return (
     <div id="contact" className="h-full px-6 md:px-12 lg:px-50">
       <h2 className="text-4xl md:text-5xl font-bold">Contact</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-10 w-full lg:w-[60%] mx-auto">
-        <Card>
-          <CardHeader>
-            <CardTitle>Github</CardTitle>
-            <CardDescription>vairan37</CardDescription>
-            <CardAction>
-              <a
-                href="https://github.com/vairan37"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="cursor-pointer">
-                  <Link />
-                </Button>
-              </a>
-            </CardAction>
-          </CardHeader>
-          <CardContent>
-            <Github />
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle>Linkedin</CardTitle>
-            <CardDescription>Victor Raveau</CardDescription>
-            <CardAction>
-              <a
-                href="https://www.linkedin.com/in/victor-raveau/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="cursor-pointer">
-                  <Link />
-                </Button>
-              </a>
-            </CardAction>
-          </CardHeader>
-          <CardContent>
-            <Linkedin />
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Mail</CardTitle>
-            <CardDescription>vicraveau@gmail.com</CardDescription>
-            <CardAction>
-              <a href="mailto:vicraveau@gmail.com">
-                <Button className="cursor-pointer">
-                  <Link />
-                </Button>
-              </a>
-            </CardAction>
-          </CardHeader>
-          <CardContent>
-            <Mail />
-          </CardContent>
-        </Card>
-        <a 
-          href="/documents/CV-Raveau-Victor.pdf" 
-          download="CV-Raveau-Victor.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block h-full"
-        >
-          <Card className="cursor-pointer h-full hover:border-black/30 dark:hover:border-white/30 transition-colors">
-            <CardHeader>
-              <CardTitle>CV</CardTitle>
-              <CardDescription>Télécharger</CardDescription>
-              <CardAction>
-                <Button className="cursor-pointer">
-                  <Download />
-                </Button>
-              </CardAction>
-            </CardHeader>
-            <CardContent>
-              <FileText />
-            </CardContent>
-          </Card>
-        </a>
+        {jsonContact.map((contact) => (
+          <a
+            key={contact.id}
+            href={contact.url}
+            download={contact.name === "CV" ? "CV-Raveau-Victor.pdf" : null}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block h-full"
+          >
+            <Card className="cursor-pointer h-full hover:border-black/30 dark:hover:border-white/30 transition-colors">
+              <CardHeader>
+                <CardTitle>{contact.name}</CardTitle>
+                <CardDescription>{contact.description}</CardDescription>
+                <CardAction>
+                  <Button className="cursor-pointer">{contact.iconBtn}</Button>
+                </CardAction>
+              </CardHeader>
+              <CardContent>{contact.icon}</CardContent>
+            </Card>
+          </a>
+        ))}
         {/* TODO : Ajouter une préview pour le CV */}
       </div>
     </div>
