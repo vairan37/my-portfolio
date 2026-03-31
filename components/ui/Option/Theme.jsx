@@ -31,10 +31,10 @@ export default function Theme() {
           Sombre
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
+          Claire
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
+          Système
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
