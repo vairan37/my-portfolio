@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export default function Projets() {
   return (
-    <div id="projets" className="min-h-[70vh] px-6 md:px-12 lg:px-50 py-10 lg:py-0">
+    <div id="projets" className="min-h-[70vh] px-6 md:px-12 lg:px-50 py-10 lg:py-0 z-10">
       <h2 className="text-4xl lg:text-5xl font-bold">Projets</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10 lg:mt-15">
         {projets.map((projet) => (

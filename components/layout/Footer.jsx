@@ -7,7 +7,7 @@ export default function Footer() {
   const year = date.getFullYear();
 
   return (
-    <div className="p-10 pb-5 bg-black/20 backdrop-blur-mt z-50 border-t border-white/10 items-center  dark:bg-black/50 dark:border-black/10">
+    <div className="relative p-10 pb-5 bg-black/10 backdrop-blur-md z-50 border-t border-white/10 items-center dark:bg-black/50 dark:border-black/10">
       <div className="flex flex-row justify-between">
         <Nav />
         <div className="flex flex-row gap-5">

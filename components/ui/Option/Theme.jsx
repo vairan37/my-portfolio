@@ -28,7 +28,7 @@ export default function Theme() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
+          Sombre
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light
