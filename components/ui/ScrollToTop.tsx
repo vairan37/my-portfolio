@@ -12,7 +12,7 @@ export default function ScrollToTop() {
 
 
     return (
-        <div className="fixed bottom-8 right-8 z-50">
+        <div className="fixed bottom-8 right-8 z-100">
             <Button variant="outline" size="icon" aria-label="Submit" onClick={GoTop}>
                 <ArrowUpIcon/>
             </Button>
