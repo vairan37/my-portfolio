@@ -17,9 +17,9 @@ export default function Background() {
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
 
-    const spacing = 25; // distance entre les points
-    const radius = 1.2;   // taille des points
-    const influenceRadius = 125; // zone d'effet de la souris
+    const spacing = 20; // distance entre les points
+    const radius = 1;   // taille des points
+    const influenceRadius = 130; // zone d'effet de la souris
 
     const draw = () => {
       ctx.clearRect(0, 0, width, height);
@@ -35,7 +35,7 @@ export default function Background() {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           // effet de fade inversé
-          const opacity = isDark ? Math.max(0.05, 1 - distance / influenceRadius) : Math.max(0.1, 1 - distance / influenceRadius);
+          const opacity = Math.max(0.2, 1 - distance / influenceRadius);
 
           ctx.beginPath();
           ctx.arc(x, y, radius, 0, Math.PI * 2);

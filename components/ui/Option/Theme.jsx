@@ -31,7 +31,7 @@ export default function Theme() {
           Sombre
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("light")}>
-          Claire
+          Clair
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
           Système

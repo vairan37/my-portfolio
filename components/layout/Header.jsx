@@ -1,7 +1,13 @@
+"use client";
+
 // import Langue from "@/components/ui/Option/Langue";
 import Theme from "@/components/ui/Option/Theme";
 import Nav from "./Nav";
 import { FlowerIcon } from "../ui/icons/FlowerIcon";
+
+function GoTop() {
+    window.scrollTo(0, 0);
+}
 
 export default function Header() {
   return (
@@ -9,7 +15,7 @@ export default function Header() {
       <div className="flex flex-row gap-5 ml-4 sm:ml-6 lg:ml-10 flex-1">
         <Nav />
       </div>
-      <a href="#accueil" className="cursor-pointer hover:opacity-80 transition-opacity">
+      <a className="cursor-pointer hover:opacity-80 transition-opacity" onClick={GoTop}>
         <FlowerIcon className="w-[25px] h-[25px] text-black dark:text-white" />
       </a>
       <div className="flex flex-row gap-5 mr-4 sm:mr-6 lg:mr-10 flex-1 justify-end">

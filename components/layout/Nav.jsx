@@ -3,6 +3,10 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
+function GoTop() {
+    window.scrollTo(0, 0);
+}
+
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,9 +14,8 @@ export default function Nav() {
   // TODO: Harmoniser la langue entre la Nav (en) et les titres de sections (fr)
 
   const navLinks = [
-    { href: "#accueil", label: "Accueil" },
-    { href: "#about", label: "About me" },
-    { href: "#projets", label: "Projects" },
+    { href: "#about", label: "À propos" },
+    { href: "#projets", label: "Projets" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -20,6 +23,12 @@ export default function Nav() {
     <nav>
       {/* Desktop Navigation */}
       <div className="hidden lg:flex flex-row gap-5 items-center">
+        <div className="flex flex-row gap-5 items-center">
+          <a className="hover:opacity-70 transition-opacity cursor-pointer" onClick={GoTop}>
+            Accueil
+          </a>
+            <p className="text-0.1xl">•</p>
+        </div>
         {navLinks.map((link, index) => (
           <div key={link.href} className="flex flex-row gap-5 items-center">
             <a href={link.href} className="hover:opacity-70 transition-opacity">
