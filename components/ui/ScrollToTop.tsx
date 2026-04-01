@@ -23,7 +23,7 @@ export default function ScrollToTop() {
 
 
     return (
-        <div className={`fixed bottom-8 right-8 z-[100] transition-all duration-300 ${
+        <div className={`fixed bottom-8 right-8 z-100 transition-all duration-300 ${
           isAtTop ? "opacity-0 scale-50 pointer-events-none translate-y-10" : "opacity-100 scale-100 pointer-events-auto translate-y-0"
         }`}>
             <Button variant="outline" size="icon" aria-label="Submit" onClick={GoTop}>
